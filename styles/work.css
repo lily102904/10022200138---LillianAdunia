@@ -1,0 +1,187 @@
+/* styles/work.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0d1b2a; /* Blue-black background */
+    color: #e0e1dd; /* Light grey text */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* General styles */
+header {
+    background-color: #1b263b; /* Darker blue-black for the header */
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #e0e1dd; /* Light grey text */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #fca311; /* Accent color on hover */
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #fca311; /* Accent color for headings */
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    background: #1b263b;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #fca311;
+    color: #0d1b2a;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #ffba08;
+}
+
+.mission {
+    padding: 50px;
+    background-color: #1b263b;
+    text-align: center;
+}
+
+.activity {
+    padding: 50px;
+    background-color: #1b263b;
+}
+
+.activity-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.activity-grid div {
+    background-color: #0d1b2a;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.activity-grid img {
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: #1b263b;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #fca311;
+    color: #0d1b2a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #ffba08;
+}
+
+.back-button {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fca311;
+    color: #0d1b2a;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back-button:hover {
+    background-color: #ffba08;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1b263b;
+    color: #e0e1dd;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    .hero {
+        padding: 30px;
+    }
+    
+    .activity-grid {
+        grid-template-columns: 1fr;
+    }
+}
